@@ -73,17 +73,17 @@ The dominant pattern is most consistent with an FCC, zinc-blende-like diffractio
   Helpers for downloading and indexing the AMCSD CIF archive locally.
 - `data/gr3.xy`
   Experimental Group 3 XRD data used in this analysis.
-- `gr3_xrd_plot.png`
+- `figures/gr3_xrd_plot.png`
   Main experimental plot.
-- `gr3_raw_full_linear.png`
+- `figures/gr3_raw_full_linear.png`
   Raw-data full-range plot on linear scale.
-- `gr3_raw_full_log.png`
+- `figures/gr3_raw_full_log.png`
   Raw-data full-range plot on log scale.
-- `gr3_weak_peaks_simple.png`
+- `figures/gr3_weak_peaks_simple.png`
   Simple zoomed plot showing the weak features near `33.3°` and `59.2°`.
-- `gr3_vs_zns.png`
+- `figures/gr3_vs_zns.png`
   Experimental vs simulated comparison for `ZnS`.
-- `gr3_vs_cucl.png`
+- `figures/gr3_vs_cucl.png`
   Experimental vs simulated comparison for `CuCl`.
 - `xrd_lab_submission_draft.md`
   Draft report text and supporting notes.
@@ -124,7 +124,7 @@ That left `ZnS` and `CuCl` as the most reasonable candidates to compare in detai
 
 ## Weak Peaks
 
-The weak features near `33.32°` and `59.16°` are only marginal in the raw data. In the report, they should be described as weak or tentative features rather than strong resolved peaks. The plot `gr3_weak_peaks_simple.png` was made specifically to show these regions more clearly without smoothing away the raw signal.
+The weak features near `33.32°` and `59.16°` are only marginal in the raw data. In the report, they should be described as weak or tentative features rather than strong resolved peaks. The plot `figures/gr3_weak_peaks_simple.png` was made specifically to show these regions more clearly without smoothing away the raw signal.
 
 ## Tests
 
