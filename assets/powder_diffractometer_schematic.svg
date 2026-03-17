@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="860" viewBox="0 0 1500 860">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#1f2937"/>
+    </marker>
+    <marker id="beam" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#b91c1c"/>
+    </marker>
+    <style>
+      .title { font: 700 32px Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 700 24px Arial, sans-serif; fill: #111827; }
+      .label { font: 20px Arial, sans-serif; fill: #1f2937; }
+      .small { font: 18px Arial, sans-serif; fill: #334155; }
+      .component { fill: #f8fafc; stroke: #475569; stroke-width: 3; rx: 12; }
+      .tube { fill: #e0f2fe; stroke: #0369a1; stroke-width: 3; rx: 12; }
+      .detector { fill: #ecfccb; stroke: #4d7c0f; stroke-width: 3; rx: 12; }
+      .sample { fill: #fde68a; stroke: #b45309; stroke-width: 3; }
+      .beam { stroke: #b91c1c; stroke-width: 5; fill: none; marker-end: url(#beam); }
+      .guide { stroke: #64748b; stroke-width: 2; stroke-dasharray: 8 8; fill: none; }
+      .arc { stroke: #475569; stroke-width: 3; fill: none; }
+      .info { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; rx: 12; }
+      .foot { font: 16px Arial, sans-serif; fill: #374151; }
+    </style>
+  </defs>
+
+  <rect width="1500" height="860" fill="#ffffff"/>
+  <text x="60" y="55" class="title">Schematic overview of a powder XRD experiment (Bragg-Brentano style)</text>
+  <text x="60" y="88" class="label">This drawing is an original schematic of the main components that must be reported so another lab could repeat the measurement.</text>
+
+  <rect x="50" y="120" width="920" height="470" fill="#f8fafc" stroke="#94a3b8" stroke-width="2" rx="16"/>
+
+  <rect x="90" y="300" width="150" height="100" class="tube"/>
+  <text x="112" y="340" class="subtitle">1. X-ray tube</text>
+  <text x="113" y="370" class="small">anode + HV source</text>
+
+  <rect x="290" y="325" width="70" height="50" class="component"/>
+  <text x="274" y="315" class="label">2. incident slit / optics</text>
+
+  <rect x="445" y="430" width="130" height="28" class="sample"/>
+  <text x="420" y="412" class="label">3. powder sample holder</text>
+  <rect x="485" y="458" width="50" height="32" class="component"/>
+  <text x="450" y="520" class="small">spinner / stage</text>
+
+  <path d="M530 445 A230 230 0 0 1 760 215" class="arc"/>
+  <path d="M530 445 A230 230 0 0 0 760 675" class="arc"/>
+  <text x="735" y="205" class="label">4. goniometer circle</text>
+
+  <rect x="810" y="255" width="72" height="44" class="component"/>
+  <text x="786" y="240" class="label">5. receiving slit</text>
+
+  <rect x="895" y="225" width="150" height="100" class="detector"/>
+  <text x="920" y="265" class="subtitle">6. detector</text>
+  <text x="928" y="295" class="small">counts diffracted beam</text>
+
+  <rect x="770" y="540" width="230" height="70" class="component"/>
+  <text x="810" y="582" class="subtitle">7. control + acquisition PC</text>
+
+  <path d="M240 350 L444 444" class="beam"/>
+  <path d="M574 444 L895 275" class="beam"/>
+
+  <line x1="530" y1="445" x2="400" y2="445" class="guide"/>
+  <line x1="530" y1="445" x2="690" y2="360" class="guide"/>
+  <path d="M470 445 A60 60 0 0 1 480 417" class="arc"/>
+  <path d="M586 415 A65 65 0 0 1 637 383" class="arc"/>
+  <text x="470" y="430" class="label">θ</text>
+  <text x="612" y="404" class="label">θ</text>
+
+  <path d="M460 595 A155 155 0 0 0 690 360" class="arc"/>
+  <text x="640" y="520" class="label">2θ</text>
+
+  <text x="120" y="265" class="small">characteristic radiation</text>
+  <text x="105" y="285" class="small">(often Cu Kα or Co Kα)</text>
+  <text x="585" y="335" class="small">diffracted beam</text>
+  <text x="315" y="400" class="small">incident beam</text>
+
+  <rect x="1010" y="120" width="430" height="470" class="info"/>
+  <text x="1035" y="160" class="subtitle">What to report for reproducibility</text>
+  <text x="1035" y="200" class="label">1. Tube/anode:</text>
+  <text x="1160" y="200" class="small">element, wavelength, voltage/current or power, filter/monochromator.</text>
+  <text x="1035" y="240" class="label">2. Incident optics:</text>
+  <text x="1165" y="240" class="small">divergence slit, Soller slit, masks, fixed or variable geometry.</text>
+  <text x="1035" y="280" class="label">3. Sample:</text>
+  <text x="1130" y="280" class="small">powder mounting, holder type, flat plate/capillary, spinning yes/no.</text>
+  <text x="1035" y="320" class="label">4. Geometry:</text>
+  <text x="1140" y="320" class="small">Bragg-Brentano or other, coupled theta-2theta scan, 2theta range.</text>
+  <text x="1035" y="360" class="label">5. Step strategy:</text>
+  <text x="1160" y="360" class="small">step size or continuous scan speed, counting time per step.</text>
+  <text x="1035" y="400" class="label">6. Detector side:</text>
+  <text x="1160" y="400" class="small">receiving slit / monochromator / detector type and active length.</text>
+  <text x="1035" y="440" class="label">7. Calibration:</text>
+  <text x="1145" y="440" class="small">standard used, alignment checks, background treatment if relevant.</text>
+  <text x="1035" y="480" class="label">8. Output:</text>
+  <text x="1118" y="480" class="small">intensity versus 2theta, then identify peaks and derive lattice parameter.</text>
+
+  <rect x="50" y="640" width="1390" height="160" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="12"/>
+  <text x="75" y="680" class="subtitle">Generic measurement workflow</text>
+  <text x="75" y="715" class="label">The X-ray tube generates characteristic radiation, the incident optics define beam divergence, the powder sample diffracts at angles that satisfy Bragg's law,</text>
+  <text x="75" y="745" class="label">the goniometer keeps the theta and 2theta geometry controlled, and the detector records intensity as a function of 2theta. For the final report, replace this generic</text>
+  <text x="75" y="775" class="label">schematic with the actual settings you observed in the lab notebook: anode material, wavelength, slit settings, scan range, step size/count time, and detector type.</text>
+
+  <text x="50" y="835" class="foot">Figure made in this workspace as an original schematic, based on course slides and official XRD vendor documentation cited in the draft report.</text>
+</svg>

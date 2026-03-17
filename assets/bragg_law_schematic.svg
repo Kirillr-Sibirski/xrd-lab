@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#1f2937"/>
+    </marker>
+    <marker id="ray-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#b91c1c"/>
+    </marker>
+    <marker id="ray-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#047857"/>
+    </marker>
+    <style>
+      .title { font: 700 32px Arial, sans-serif; fill: #111827; }
+      .subtitle { font: 700 24px Arial, sans-serif; fill: #111827; }
+      .label { font: 20px Arial, sans-serif; fill: #1f2937; }
+      .small { font: 18px Arial, sans-serif; fill: #1f2937; }
+      .boxtext { font: 18px Arial, sans-serif; fill: #111827; }
+      .panel { fill: #f8fafc; stroke: #94a3b8; stroke-width: 2; }
+      .plane { stroke: #64748b; stroke-width: 4; }
+      .atom { fill: #60a5fa; stroke: #1d4ed8; stroke-width: 2; }
+      .ray1 { stroke: #b91c1c; stroke-width: 5; fill: none; marker-end: url(#ray-red); }
+      .ray2 { stroke: #047857; stroke-width: 5; fill: none; marker-end: url(#ray-green); }
+      .guide { stroke: #475569; stroke-width: 2; stroke-dasharray: 8 8; fill: none; }
+      .angle { stroke: #475569; stroke-width: 2.5; fill: none; }
+      .note { fill: #eef2ff; stroke: #6366f1; stroke-width: 2; rx: 12; }
+      .foot { font: 16px Arial, sans-serif; fill: #374151; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="820" fill="#ffffff"/>
+  <text x="60" y="55" class="title">Own schematic for Bragg's law at the atomic level</text>
+  <text x="60" y="88" class="label">Two cases are shown: constructive interference (left) and destructive interference (right).</text>
+
+  <rect x="50" y="120" width="620" height="500" class="panel"/>
+  <rect x="730" y="120" width="620" height="500" class="panel"/>
+
+  <text x="80" y="165" class="subtitle">Constructive interference</text>
+  <text x="760" y="165" class="subtitle">Destructive interference</text>
+
+  <line x1="120" y1="270" x2="610" y2="270" class="plane"/>
+  <line x1="120" y1="360" x2="610" y2="360" class="plane"/>
+  <line x1="120" y1="450" x2="610" y2="450" class="plane"/>
+
+  <line x1="800" y1="270" x2="1290" y2="270" class="plane"/>
+  <line x1="800" y1="360" x2="1290" y2="360" class="plane"/>
+  <line x1="800" y1="450" x2="1290" y2="450" class="plane"/>
+
+  <circle cx="200" cy="270" r="11" class="atom"/>
+  <circle cx="330" cy="270" r="11" class="atom"/>
+  <circle cx="460" cy="270" r="11" class="atom"/>
+  <circle cx="260" cy="360" r="11" class="atom"/>
+  <circle cx="390" cy="360" r="11" class="atom"/>
+  <circle cx="520" cy="360" r="11" class="atom"/>
+  <circle cx="200" cy="450" r="11" class="atom"/>
+  <circle cx="330" cy="450" r="11" class="atom"/>
+  <circle cx="460" cy="450" r="11" class="atom"/>
+
+  <circle cx="880" cy="270" r="11" class="atom"/>
+  <circle cx="1010" cy="270" r="11" class="atom"/>
+  <circle cx="1140" cy="270" r="11" class="atom"/>
+  <circle cx="940" cy="360" r="11" class="atom"/>
+  <circle cx="1070" cy="360" r="11" class="atom"/>
+  <circle cx="1200" cy="360" r="11" class="atom"/>
+  <circle cx="880" cy="450" r="11" class="atom"/>
+  <circle cx="1010" cy="450" r="11" class="atom"/>
+  <circle cx="1140" cy="450" r="11" class="atom"/>
+
+  <path d="M70 160 L280 270" class="ray1"/>
+  <path d="M280 270 L505 160" class="ray1"/>
+  <path d="M70 160 L340 360" class="ray2"/>
+  <path d="M340 360 L565 250" class="ray2"/>
+
+  <path d="M750 160 L960 270" class="ray1"/>
+  <path d="M960 270 L1185 160" class="ray1"/>
+  <path d="M750 160 L1020 360" class="ray2"/>
+  <path d="M1020 360 L1245 230" class="ray2"/>
+
+  <line x1="280" y1="270" x2="340" y2="360" class="guide"/>
+  <line x1="960" y1="270" x2="1020" y2="360" class="guide"/>
+
+  <path d="M255 270 A40 40 0 0 1 220 242" class="angle"/>
+  <path d="M325 360 A44 44 0 0 1 295 323" class="angle"/>
+  <path d="M935 270 A40 40 0 0 1 900 242" class="angle"/>
+  <path d="M1005 360 A44 44 0 0 1 973 323" class="angle"/>
+
+  <text x="205" y="246" class="label">θ</text>
+  <text x="285" y="327" class="label">θ</text>
+  <text x="885" y="246" class="label">θ</text>
+  <text x="965" y="327" class="label">θ</text>
+
+  <text x="363" y="315" class="small">Path difference Δ = 2d sin θ = nλ</text>
+  <text x="1043" y="315" class="small">Path difference Δ = (n + 1/2)λ</text>
+
+  <text x="130" y="245" class="label">parallel crystal planes</text>
+  <text x="800" y="245" class="label">same d, but wrong phase relation</text>
+  <text x="125" y="390" class="label">interplanar spacing d</text>
+  <text x="805" y="390" class="label">waves return out of phase</text>
+
+  <line x1="620" y1="270" x2="620" y2="360" stroke="#1f2937" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <line x1="1300" y1="270" x2="1300" y2="360" stroke="#1f2937" stroke-width="3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="632" y="320" class="label">d</text>
+  <text x="1312" y="320" class="label">d</text>
+
+  <rect x="90" y="535" width="540" height="60" class="note"/>
+  <text x="110" y="560" class="boxtext">Peak position is set by λ, d, and θ through Bragg's law: nλ = 2d sin θ.</text>
+  <text x="110" y="585" class="boxtext">Peak intensity is larger when the scattered amplitudes add in phase and the structure factor is large.</text>
+
+  <rect x="770" y="535" width="540" height="60" class="note"/>
+  <text x="790" y="560" class="boxtext">If the phase difference is not an integer multiple of λ, the waves cancel partly or fully.</text>
+  <text x="790" y="585" class="boxtext">Then the corresponding reflection is weak or absent in the diffractogram.</text>
+
+  <rect x="50" y="655" width="1300" height="120" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2" rx="12"/>
+  <text x="75" y="690" class="subtitle">Intensity-related factors indicated in the drawing</text>
+  <text x="75" y="720" class="label">1. Crystal side: atomic arrangement within the unit cell changes the structure factor F(together with atomic scattering power).</text>
+  <text x="75" y="748" class="label">2. Crystal side: more ordered, coherently diffracting planes give a stronger and sharper peak than a poorly ordered crystal.</text>
+  <text x="75" y="776" class="label">3. X-ray side: wavelength λ and incident angle θ set the phase relation between rays scattered from successive planes.</text>
+
+  <text x="50" y="805" class="foot">Figure made in this workspace as an original schematic, based on course slides and cited XRD sources.</text>
+</svg>

@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+.mplconfig/
+*.pyc
+
+# Large local AMCSD cache artifacts
+amcsd_cif.zip
+amcsd_index.json
+cif/
+
+# Local OS / editor noise
+.idea/
+.vscode/
