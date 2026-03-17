@@ -2,6 +2,20 @@
 
 This repository contains the code, data, figures, and report notes used for a cubic powder-XRD lab analysis.
 
+## Lab Instructions Summary
+
+The lab task was to analyze an unknown powder diffractogram under the assumption that the unknown is an inorganic compound with a cubic unit cell. The main required deliverables were:
+
+- plot the experimental powder XRD pattern with all visible peaks
+- calculate the cubic unit-cell parameter `a`
+- assign `hkl` indices to the observed reflections
+- explain one choice that improves the precision of the `a` value
+- simulate two candidate crystal models from an online database
+- compare the simulations with the experimental pattern
+- conclude with the most likely crystal identity and discuss uncertainty
+
+This repository includes the data analysis, figures, and draft text used to answer those tasks.
+
 ## What We Did
 
 We built a small Python workflow to:
@@ -13,6 +27,17 @@ We built a small Python workflow to:
 - estimate the cubic unit-cell parameter `a`
 - simulate powder diffractograms from AMCSD CIF files
 - compare candidate crystal models with the experimental pattern
+
+## Tasks Completed In This Repo
+
+- prepared experimental plots for the Group 3 dataset
+- checked weak-feature regions near `33.32°` and `59.16°`
+- indexed the dominant reflections with an FCC-like cubic sequence
+- estimated the lattice parameter from the strongest reflections
+- compared FCC and BCC indexing logic
+- simulated candidate diffractograms for `ZnS` and `CuCl`
+- checked pyrite as a competing candidate and compared its extra predicted peaks
+- drafted report-ready wording for the main lab questions
 
 ## Sample Analyzed Here
 
@@ -62,6 +87,8 @@ The dominant pattern is most consistent with an FCC, zinc-blende-like diffractio
   Experimental vs simulated comparison for `CuCl`.
 - `xrd_lab_submission_draft.md`
   Draft report text and supporting notes.
+- `docs/lab_task_summary.md`
+  Short summary of the lab instructions and the work completed here.
 
 ## Reproducing The Analysis
 
