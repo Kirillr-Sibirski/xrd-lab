@@ -1,0 +1,53 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bragg(1913)]{bragg1913}
+W.~H. Bragg.
+\newblock The reflection of x-rays by crystals.
+\newblock \emph{Nature}, 91:\penalty0 477, 1913.
+\newblock \doi{10.1038/091477b0}.
+
+\bibitem[Downs and Hall-Wallace(2003)]{downs2003}
+Robert~T. Downs and Michelle Hall-Wallace.
+\newblock The american mineralogist crystal structure database.
+\newblock \emph{American Mineralogist}, 88:\penalty0 247--250, 2003.
+
+\bibitem[Dutta(1962)]{dutta1962}
+B.~N. Dutta.
+\newblock Lattice constants and thermal expansion of silicon up to 900 c by
+  x-ray method.
+\newblock \emph{Physica Status Solidi}, 2:\penalty0 984--987, 1962.
+
+\bibitem[Hunter(2007)]{hunter2007}
+J.~D. Hunter.
+\newblock Matplotlib: A 2d graphics environment.
+\newblock \emph{Computing in Science \& Engineering}, 9\penalty0 (3):\penalty0
+  90--95, 2007.
+\newblock \doi{10.1109/MCSE.2007.55}.
+
+\bibitem[Onnink(2026)]{onnink2026}
+Arnoud Onnink.
+\newblock Intro to the x-ray diffraction lab, 2026.
+\newblock Course slides provided during the lab.
+
+\bibitem[{Python Software Foundation}(2026)]{python}
+{Python Software Foundation}.
+\newblock Python documentation, 2026.
+\newblock URL \url{https://docs.python.org/3/}.
+
+\bibitem[{RRUFF Project}(2026)]{amcsd}
+{RRUFF Project}.
+\newblock American mineralogist crystal structure database, 2026.
+\newblock URL \url{https://www.rruff.net/amcsd/}.
+\newblock Accessed during candidate structure lookup.
+
+\bibitem[Skinner(1961)]{skinner1961}
+B.~J. Skinner.
+\newblock Unit-cell edges of natural and synthetic sphalerites.
+\newblock \emph{American Mineralogist}, 46:\penalty0 1399--1411, 1961.
+
+\end{thebibliography}
